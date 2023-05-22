@@ -15,9 +15,13 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+.navbar {
+    padding: 2rem 0;
+}
+
 section {
     margin: 0 auto;
-    padding: 10% 17.5%;
+    padding: 10% 6%;
     min-height: 100vh;
     overflow: auto;
 }
@@ -38,14 +42,34 @@ img {
     height: auto;
 }
 
+.center-text {
+    text-align: center;
+}
+
+.padding-btwn-text-small > *:not(:first-child) {
+    margin-top: 4rem;
+  }
+
 /* 2. FONTS */
+h1,
+h3 {
+    color: #FBFBF9;
+}
+
+#opener a {
+    padding: 1rem;
+    background-color: #FBFBF9;
+    border-radius: 8px;
+}
 
 h1 {
     font-family: 'Rubik', sans-serif;
+    font-size: 3.8rem;
+    font-weight: 500;
 }
 
-h2 {
-
+h3 {
+    display: none;
 }
 
 /* 3. Filler 1 */
@@ -72,3 +96,5 @@ h2 {
 #contact {
     background-color: #8ea39a;
 }
+
+/* Media Queries */
