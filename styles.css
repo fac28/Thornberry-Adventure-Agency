@@ -1,4 +1,4 @@
-/* 1. GENERAL */
+/* -- General -- */
 *,
 *::before,
 *::after {
@@ -16,7 +16,10 @@ body {
 }
 
 .navbar {
-    padding: 2rem 0;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
@@ -25,6 +28,10 @@ section {
     min-height: 100vh;
     overflow: auto;
     position: relative;
+}
+
+section:first-child {
+    min-height: calc(100vh - 75px);
 }
 
 a {
@@ -43,12 +50,21 @@ img {
     height: auto;
 }
 
+/* -- Repeatable Styling -- */
+
+.button {
+    padding: 0.8rem 2rem;
+    background-color: #FBFBF9;
+    border-radius: 8px;
+}
+
 .center-text {
     text-align: center;
 }
 
 .center-vertical {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -56,16 +72,10 @@ img {
     margin-top: 4rem;
   }
 
-/* 2. FONTS */
+/* -- Fonts -- */
 h1,
 h3 {
     color: #FBFBF9;
-}
-
-#opener a {
-    padding: 1rem;
-    background-color: #FBFBF9;
-    border-radius: 8px;
 }
 
 h1 {
@@ -78,25 +88,44 @@ h3 {
     display: none;
 }
 
-/* 3. Filler 1 */
-
-#opener {
-    background: url(images/suspension-bridge.jpg) no-repeat center center;
-    background-size: cover;
-}
-
+/* -- Styling for Multiple Sections -- */
 #filler1, 
 #introduction {
     background-color: #c2dfd0;
+}
+
+#filler1, 
+#filler2 {
+    min-height: 50vh;
+}
+
+/* -- Section Specific Styling -- */
+    /* Opening Section */
+
+#opener {
+    background: #93AD9E url(images/suspension-bridge.jpg) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/* Filler 1 Section */
+blockquote cite {
+    display: block;
+    margin-left: 20px;
+    padding-top: 1rem;
+  }
+
+/* Filler 2 Section */
+#filler2 {
+    background: url(images/leopard-tree.jpeg) no-repeat center center;
+    background-size: cover;
 }
 
 #introduction {
     opacity: 0.28; /* refers to background color */
 }
 
-#filler1 {
-    min-height: 50vh;
-}
+
 
 #team {
     background-color: #c4b09b;
