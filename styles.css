@@ -1,0 +1,66 @@
+/* 1. GENERAL */
+*,
+*::before,
+*::after {
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+      
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    margin: 0 auto;
+    padding: 10% 17.5%;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. FONTS */
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+/* 3. Filler 1 */
+
+#filler1, 
+#introduction {
+    background-color: #c2dfd0;
+}
+
+#introduction {
+    opacity: 0.28; /* refers to background color */
+}
+
+#team {
+    background-color: #c4b09b;
+    opacity: 0.39;
+}
+
+#contact {
+    background-color: #8ea39a;
+}
