@@ -24,6 +24,7 @@ section {
     padding: 10% 6%;
     min-height: 100vh;
     overflow: auto;
+    position: relative;
 }
 
 a {
@@ -44,6 +45,11 @@ img {
 
 .center-text {
     text-align: center;
+}
+
+.center-vertical {
+    display: flex;
+    align-items: center;
 }
 
 .padding-btwn-text-small > *:not(:first-child) {
@@ -86,6 +92,10 @@ h3 {
 
 #introduction {
     opacity: 0.28; /* refers to background color */
+}
+
+#filler1 {
+    min-height: 50vh;
 }
 
 #team {
