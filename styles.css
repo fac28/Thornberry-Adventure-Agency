@@ -1,4 +1,6 @@
-/* 1. GENERAL */
+
+/* -- General -- */
+
 *,
 *::before,
 *::after {
@@ -8,23 +10,27 @@
 }
 
 html {
-    background-color: #f5f5f5; /* moved this here rather than * otherwise all elements get given a filled background */
-}
-      
-body {
-    font-family: 'Playfair Display', serif;
+    background-color: #f5f5f5; 
 }
 
 .navbar {
-    padding: 2rem 0;
+    height: 4.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 section {
     margin: 0 auto;
-    padding: 10% 6%;
+    padding: 0 1.5rem;
     min-height: 100vh;
     overflow: auto;
     position: relative;
+}
+
+section:first-child {
+    min-height: calc(100vh - 4.5rem);
 }
 
 a {
@@ -43,12 +49,21 @@ img {
     height: auto;
 }
 
+/* -- Repeatable Styling -- */
+
+.button {
+    padding: 0.8rem 2rem;
+    background-color: #FBFBF9;
+    border-radius: 8px;
+}
+
 .center-text {
     text-align: center;
 }
 
 .center-vertical {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -56,16 +71,14 @@ img {
     margin-top: 4rem;
   }
 
-/* 2. FONTS */
+/* -- Fonts -- */
+body {
+    font-family: 'Playfair Display', serif;
+}
+
 h1,
 h3 {
     color: #FBFBF9;
-}
-
-#opener a {
-    padding: 1rem;
-    background-color: #FBFBF9;
-    border-radius: 8px;
 }
 
 h1 {
@@ -78,24 +91,40 @@ h3 {
     display: none;
 }
 
-/* 3. Filler 1 */
-
-#opener {
-    background: url(images/suspension-bridge.jpg) no-repeat center center;
-    background-size: cover;
-}
-
+/* -- Styling for Multiple Sections -- */
 #filler1, 
 #introduction {
     background-color: #c2dfd0;
 }
 
-#introduction {
-    opacity: 0.28; /* refers to background color */
+#filler1, 
+#filler2 {
+    min-height: 50vh;
 }
 
-#filler1 {
-    min-height: 50vh;
+/* -- Section Specific Styling -- */
+    /* Opening Section */
+
+#opener {
+    background: #93AD9E url(images/suspension-bridge.jpg) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/* Filler 1 Section */
+blockquote cite {
+    display: block;
+    padding-top: 1rem;
+  }
+
+/* Filler 2 Section */
+#filler2 {
+    background: url(images/leopard-tree.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+#introduction {
+    opacity: 0.28; /* refers to background color */
 }
 
 #team {
@@ -108,3 +137,21 @@ h3 {
 }
 
 /* Media Queries */
+
+@media (min-width: 600px) {
+    h3 {
+        display: block;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    section {
+        padding: 2rem 12rem;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+  }
