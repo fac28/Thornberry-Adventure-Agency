@@ -18,8 +18,9 @@ body {
 .navbar {
     height: 75px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0 2%;
 }
 
 section {
@@ -106,6 +107,7 @@ h3 {
     background: #93AD9E url(images/suspension-bridge.jpg) no-repeat center center;
     background-size: cover;
     background-blend-mode: multiply;
+    backdrop-filter: blur(50px);
 }
 
 /* Filler 1 Section */
@@ -137,3 +139,21 @@ blockquote cite {
 }
 
 /* Media Queries */
+
+@media all and (min-width: 600px) {
+    h3 {
+      display: block;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    section {
+        padding: 10% 20%;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+  }
