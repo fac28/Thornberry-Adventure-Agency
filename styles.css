@@ -14,23 +14,23 @@ html {
 }
 
 .navbar {
-    height: 75px;
+    height: 4.5rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 2%;
+    padding: 0 2rem;
 }
 
 section {
     margin: 0 auto;
-    padding: 10% 6%;
+    padding: 0 1.5rem;
     min-height: 100vh;
     overflow: auto;
     position: relative;
 }
 
 section:first-child {
-    min-height: calc(100vh - 75px);
+    min-height: calc(100vh - 4.5rem);
 }
 
 a {
@@ -109,13 +109,11 @@ h3 {
     background: #93AD9E url(images/suspension-bridge.jpg) no-repeat center center;
     background-size: cover;
     background-blend-mode: multiply;
-    backdrop-filter: blur(50px);
 }
 
 /* Filler 1 Section */
 blockquote cite {
     display: block;
-    margin-left: 20px;
     padding-top: 1rem;
   }
 
@@ -142,7 +140,7 @@ blockquote cite {
 
 @media (min-width: 600px) {
     h3 {
-      display: block;
+        display: block;
     }
 
     h1 {
@@ -150,7 +148,7 @@ blockquote cite {
     }
 
     section {
-        padding: 10% 20%;
+        padding: 2rem 12rem;
     }
 
     blockquote {
