@@ -1,4 +1,6 @@
+
 /* -- General -- */
+
 *,
 *::before,
 *::after {
@@ -8,11 +10,7 @@
 }
 
 html {
-    background-color: #f5f5f5; /* moved this here rather than * otherwise all elements get given a filled background */
-}
-      
-body {
-    font-family: 'Playfair Display', serif;
+    background-color: #f5f5f5; 
 }
 
 .navbar {
@@ -74,6 +72,10 @@ img {
   }
 
 /* -- Fonts -- */
+body {
+    font-family: 'Playfair Display', serif;
+}
+
 h1,
 h3 {
     color: #FBFBF9;
@@ -127,8 +129,6 @@ blockquote cite {
     opacity: 0.28; /* refers to background color */
 }
 
-
-
 #team {
     background-color: #c4b09b;
     opacity: 0.39;
@@ -140,7 +140,7 @@ blockquote cite {
 
 /* Media Queries */
 
-@media all and (min-width: 600px) {
+@media (min-width: 600px) {
     h3 {
       display: block;
     }
