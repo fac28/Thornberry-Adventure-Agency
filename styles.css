@@ -234,7 +234,7 @@ blockquote cite {
 }
 
 .team-container div {
-    max-width: calc(33% - var(--flex-padding));
+    max-width: calc(100% - var(--flex-padding));
     text-align: center;
 }
 
@@ -283,6 +283,12 @@ blockquote cite {
     }
   }
 
+@media (min-width: 700px) {
+    .team-container div {
+        max-width: calc(50% - var(--flex-padding));
+    }
+}
+
 @media (min-width: 800px) {
 /* Introduction Section (Grid) */
     #introduction h2 {
@@ -324,7 +330,12 @@ blockquote cite {
     .item6 {
         grid-area: 3 / 3 / 3 / 4;
     }
+}
 
+@media (min-width: 900px) {
+    .team-container div {
+        max-width: calc(33% - var(--flex-padding));
+    }
 }
 
 @media (min-width: 1050px) {
