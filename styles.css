@@ -92,9 +92,14 @@ ul {
     border-radius: 50%;
 }
 
-.image-equal-dimensions {
+.portrait-image-equal-dimensions {
     aspect-ratio: 1;
     object-fit: contain;
+}
+
+.landscape-image-equal-dimensions {
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .right-align {
