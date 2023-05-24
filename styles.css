@@ -208,6 +208,7 @@ blockquote cite {
 #leopard-text {
     text-align: right;
     display: none;
+    width: 100%;
 }
 
 #filler2 {
