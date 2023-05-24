@@ -246,6 +246,32 @@ blockquote cite {
     background-color: #8ea39a;
 }
 
+/* Contact Section */
+
+form {
+    display: grid;
+justify-content: center;}
+
+form > * > *{
+    width: 100%;
+}
+
+form input, form textarea {
+    background-color: #F2F2EF;
+    padding: 1rem;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    border: 1px solid black;
+    width: 60%;
+}
+
+.form-submit {
+    text-align: center;
+}
 
 /* Media Queries */
 
