@@ -65,7 +65,7 @@
                     </p>
                 </div>
                 <div class="item item2 ">
-                    <img src="images/elephants-playing.jpeg" alt="elephants playing in the wild savanna" class="image-circle"/>
+                    <img src="images/elephants.jpeg" alt="elephants playing in the wild savanna" class="image-circle"/>
                 </div>
                 <div class="item item3 ">
                     <img src="images/forest.jpg" alt="a tropical mountain forest covered in mist" class="image-circle"/>
@@ -86,14 +86,14 @@
                         meals prepared with locally sourced ingredients and savor sundowners while taking in
                         breathtaking vistas. After all, true adventure should be accompanied by unparalleled comfort.
                     </p>
-                </div class="item item6">
-                <!-- another image is needed here? -->
-                <!-- <div> -->
-                <!-- <img src="" alt="" /> -->
-                <!-- </div> -->
+                </div>
+                <div class="item item6">
+                    <img src="images/giraffe.jpg" alt="a giraffe sticking its tongue out" class="image-circle"/>
+                </div>
             </div>
         </section>
-        <!-- Fillter 2 (leopard) -->
+      
+        <!-- Filler 2 (leopard) -->
         <section id="filler2">
             <div id="leopard-text">
                 <p>
@@ -106,11 +106,62 @@
         </section>
         <!-- Meet the team -->
         <section id="team">
+            <h2>Meet the Thornberry Team</h2>
+            <div class="team-container">
+                <div>
+                    <img src="/images/team/nigel.webp" alt="Nigel Thornberry" />
+                    <p>Sir Nigel Thornberry</p>
+                    <p>Chief Explorer</p>
+                </div>
+                <div>
+                    <img src="/images/team/marianne.webp" alt="Marianne Thornberry" />
+                    <p>Marianne Thornberry</p>
+                    <p>Expedition Videographer</p>
+                </div>
+                <div>
+                    <img src="/images/team/eliza.webp" alt="Eliza Thornberry" />
+                    <p>Eliza Thornberry</p>
+                    <p>Animal Whisperer</p>
+                </div>
+                <div>
+                    <img src="/images/team/donnie.webp" alt="Donnie Thornberry" />
+                    <p>Donnie Thornberry</p>
+                    <p>Adrenaline Master</p>
+                </div>
+                <div>
+                    <img src="/images/team/debbie.webp" alt="Debbie Thornberry" />
+                    <p>Debbie Thornberry</p>
+                    <p>Head of Morale</p>
+                </div>
+                <div>
+                    <img src="/images/team/darwin.webp" alt="Darwin" />
+                    <p>Darwin</p>
+                    <p>Head of Operations</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <!-- Contact form -->
         <section id="contact">
+            <h2>Contact us to start your adventure</h2>
+            <form>
+                <div class="form-field">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="name">Message: </label>
+                    <textarea id="message" name="message" rows="5" cols="33"></textarea>
+                </div>
+                <div class="form-field form-submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </section>
     </footer>
     <script src="scripts.js"></script>
