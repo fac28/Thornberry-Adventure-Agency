@@ -23,7 +23,7 @@ html {
 
 section {
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     min-height: 100vh;
     overflow: auto;
     position: relative;
@@ -100,7 +100,7 @@ h1 {
     font-weight: 500;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
 
 }
@@ -110,8 +110,8 @@ h3 {
 }
 #introduction h2 {
     color: #2C2226;
-    padding-right: 30%;
 }
+
 #introduction p {
     color: #2F6B53;
 }
@@ -166,15 +166,19 @@ blockquote cite {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
-
+    gap: 3rem;
 }
 
 #introduction .container .item {
     display: inline;
 }
 
+.container:nth-child(2) {
+    color:aqua;
+}
+
 .item img {
-    width: 50%;
+    width: 30%;
 }
 
 .item1 {
@@ -208,7 +212,7 @@ blockquote cite {
     }
 
     section {
-        padding: 8rem 12rem;
+        padding: 8rem 8rem;
     }
 
     blockquote {
@@ -216,12 +220,24 @@ blockquote cite {
     }
   }
 
-@media (min-width: 1050px) {
+@media (min-width: 800px) {
+/* Introduction Section (Grid) */
+
+
+    #introduction h2 {
+        color: #2C2226;
+        padding-right: 30%;
+    }
+
     #introduction .container {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 4rem;
         align-items: center;
+    }
+
+    .item img {
+        width: 100%;
     }
 
     .item1 {
@@ -246,5 +262,17 @@ blockquote cite {
 
     .item6 {
         grid-area: 3 / 3 / 3 / 4;
+    }
+}
+
+@media (min-width: 1050px) {
+
+    section {
+        padding: 8rem 12rem;
+    }
+
+/* Fonts */
+    h2 {
+        font-size: 3rem;
     }
 }
