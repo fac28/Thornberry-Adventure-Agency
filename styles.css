@@ -68,6 +68,10 @@ ul {
     align-items: center;
 }
 
+.center-grid-x-axis {
+    text-align: center;
+}
+
 .padding-btwn-text-small > *:not(:first-child) {
     margin-top: 4rem;
   }
@@ -162,12 +166,35 @@ blockquote cite {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
+
 }
 
 #introduction .container .item {
     display: inline;
 }
-  
+
+.item img {
+    width: 50%;
+}
+
+.item1 {
+    order: 1;
+}
+.item2 {
+    order: 2;
+}
+.item3 {
+    order: 4;
+}
+.item4 {
+    order: 3;
+}
+.item5 {
+    order: 5;
+}
+.item6 {
+    order: 6;
+}
 
 /* Media Queries */
 
