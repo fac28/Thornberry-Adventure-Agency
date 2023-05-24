@@ -1,5 +1,8 @@
 
 /* -- General -- */
+:root {
+    --med_padding: 8rem;
+  }
 
 *,
 *::before,
@@ -66,6 +69,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-vertical {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .center-grid-x-axis {
@@ -81,7 +91,10 @@ ul {
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
+}
 
+.right-align {
+    margin-left: auto;
 }
 
 /* -- Fonts -- */
@@ -117,6 +130,7 @@ h3 {
 }
 
 /* -- Styling for Multiple Sections -- */
+
 #filler1 {
     background-color: #c2dfd0;
 }
@@ -135,32 +149,17 @@ h3 {
     background-blend-mode: multiply;
 }
 
-/* Filler 1 Section */
+    /* Filler 1 Section */
 blockquote cite {
     display: block;
     padding-top: 1rem;
   }
 
-/* Filler 2 Section */
-#filler2 {
-    background: url(images/leopard-tree.jpeg) no-repeat center center;
-    background-size: cover;
-}
+/* Introduction Section */
 
 #introduction {
     background-color: #E6EFEB;
 }
-
-#team {
-    background-color: #c4b09b;
-    opacity: 0.39;
-}
-
-#contact {
-    background-color: #8ea39a;
-}
-
-/* Introduction Section */
 
 #introduction .container {
     display: grid;
@@ -171,10 +170,6 @@ blockquote cite {
 
 #introduction .container .item {
     display: inline;
-}
-
-.container:nth-child(2) {
-    color:aqua;
 }
 
 .item img {
@@ -200,6 +195,34 @@ blockquote cite {
     order: 6;
 }
 
+    /* Filler 2 */
+#leopard-text {
+    text-align: right;
+    display: none;
+}
+
+#filler2 {
+    background: url(images/leopard-tree.jpeg) no-repeat center center;
+    background-size: cover;
+    align-content: space-between;
+    padding: 4rem var(--med_padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+#team {
+    background-color: #c4b09b;
+    opacity: 0.39;
+}
+
+#contact {
+    background-color: #8ea39a;
+}
+
+
 /* Media Queries */
 
 @media (min-width: 600px) {
@@ -212,18 +235,32 @@ blockquote cite {
     }
 
     section {
-        padding: 8rem 8rem;
+        padding: 8rem var(--med_padding);
     }
 
     blockquote {
         font-size: 1.2rem;
     }
+
+    #filler2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-between;
+        }
+
+    #leopard-text {
+        display: flex;
+        justify-content: flex-end;
+    }    
+
+    #leopard-text > * {
+        flex-basis: 50%;
+    }
   }
 
 @media (min-width: 800px) {
 /* Introduction Section (Grid) */
-
-
     #introduction h2 {
         color: #2C2226;
         padding-right: 30%;
@@ -263,6 +300,7 @@ blockquote cite {
     .item6 {
         grid-area: 3 / 3 / 3 / 4;
     }
+
 }
 
 @media (min-width: 1050px) {
