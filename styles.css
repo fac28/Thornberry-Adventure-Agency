@@ -1,5 +1,9 @@
 
 /* -- General -- */
+:root {
+    --med_padding: 8rem;
+    --flex-padding: 2rem;
+  }
 
 *,
 *::before,
@@ -23,7 +27,7 @@ html {
 
 section {
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     min-height: 100vh;
     overflow: auto;
     position: relative;
@@ -66,6 +70,17 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.right-vertical {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.center-grid-x-axis {
+    text-align: center;
 }
 
 .padding-btwn-text-small > *:not(:first-child) {
@@ -74,10 +89,21 @@ ul {
 
 .image-circle {
     width: 100%;
+    border-radius: 50%;
+}
+
+.portrait-image-equal-dimensions {
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.landscape-image-equal-dimensions {
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 50%;
+}
 
+.right-align {
+    margin-left: auto;
 }
 
 /* -- Fonts -- */
@@ -96,7 +122,7 @@ h1 {
     font-weight: 500;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
 
 }
@@ -106,13 +132,14 @@ h3 {
 }
 #introduction h2 {
     color: #2C2226;
-    padding-right: 30%;
 }
+
 #introduction p {
     color: #2F6B53;
 }
 
 /* -- Styling for Multiple Sections -- */
+
 #filler1 {
     background-color: #c2dfd0;
 }
@@ -131,87 +158,121 @@ h3 {
     background-blend-mode: multiply;
 }
 
-/* Filler 1 Section */
+    /* Filler 1 Section */
 blockquote cite {
     display: block;
     padding-top: 1rem;
   }
 
-/* Filler 2 Section */
-#filler2 {
-    background: url(images/leopard-tree.jpeg) no-repeat center center;
-    background-size: cover;
-}
+/* Introduction Section */
 
 #introduction {
     background-color: #E6EFEB;
 }
 
+#introduction .container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    gap: 3rem;
+}
+
+#introduction .container .item {
+    display: inline;
+}
+
+.item img {
+    width: 30%;
+}
+
+.item1 {
+    order: 1;
+}
+.item2 {
+    order: 2;
+}
+.item3 {
+    order: 4;
+}
+.item4 {
+    order: 3;
+}
+.item5 {
+    order: 5;
+}
+.item6 {
+    order: 6;
+}
+
+    /* Filler 2 */
+#leopard-text {
+    text-align: right;
+    display: none;
+    width: 100%;
+}
+
+#filler2 {
+    background: url(images/leopard-tree.jpeg) no-repeat center center;
+    background-size: cover;
+    align-content: space-between;
+    padding: 4rem var(--med_padding);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; 
+}
+
+/* Meet the Team Section */
 #team {
-    background-color: #c4b09b;
-    opacity: 0.39;
+    background-color: #E2DBD2;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--flex-padding);
+}
+
+.team-container div {
+    max-width: calc(100% - var(--flex-padding));
+    text-align: center;
+}
+
+.team-container div img {
+    width: 80%;
 }
 
 #contact {
     background-color: #8ea39a;
 }
 
-/* Introduction Section */
+/* Contact Section */
 
-#introduction .container {
+form {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 4rem;
-    align-items: center;
+justify-content: center;}
+
+form > * > *{
+    width: 100%;
 }
 
-#introduction .container .item {
-    display: inline;
+form input, form textarea {
+    background-color: #F2F2EF;
+    padding: 1rem;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
 }
-.item img {
-    /* width: 150px;
-    border-radius: 100%;
-    aspect-ratio: 1;
-    object-fit: cover; */
-}
-.item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;  
-}
-.item2 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;  
-  }
-  .item3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;  
-  }
-  .item4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2; 
-  }
 
-  .item5 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3; 
-  }
+input[type=submit] {
+    border: 1px solid black;
+    width: 60%;
+}
 
-  .item6 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 3; 
-  }
+.form-submit {
+    text-align: center;
+}
 
 /* Media Queries */
 
@@ -225,10 +286,93 @@ blockquote cite {
     }
 
     section {
-        padding: 8rem 12rem;
+        padding: 8rem var(--med_padding);
     }
 
     blockquote {
         font-size: 1.2rem;
     }
+
+    #filler2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-between;
+        }
+
+    #leopard-text {
+        display: flex;
+        justify-content: flex-end;
+    }    
+
+    #leopard-text > * {
+        flex-basis: 50%;
+    }
   }
+
+@media (min-width: 700px) {
+    .team-container div {
+        max-width: calc(50% - var(--flex-padding));
+    }
+}
+
+@media (min-width: 800px) {
+/* Introduction Section (Grid) */
+    #introduction h2 {
+        color: #2C2226;
+        padding-right: 30%;
+    }
+
+    #introduction .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    .item1 {
+        /* row start / column start / row end / column end. */
+        grid-area: 1 / 1 / 1 / 3;
+    }
+    .item2 {
+        grid-area: 1 / 3 / 1 / 4;  
+    }
+
+    .item3 {
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+    .item4 {
+        grid-area: 2 / 2 / 2 / 4;
+    }
+
+    .item5 {
+        grid-area: 3 / 1 / 3 / 3;
+    }
+
+    .item6 {
+        grid-area: 3 / 3 / 3 / 4;
+    }
+}
+
+@media (min-width: 900px) {
+    .team-container div {
+        max-width: calc(33% - var(--flex-padding));
+    }
+}
+
+@media (min-width: 1050px) {
+
+    section {
+        padding: 8rem 12rem;
+    }
+
+/* Fonts */
+    h2 {
+        font-size: 3rem;
+    }
+}
