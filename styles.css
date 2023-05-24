@@ -2,6 +2,7 @@
 /* -- General -- */
 :root {
     --med_padding: 8rem;
+    --flex-padding: 2rem;
   }
 
 *,
@@ -88,9 +89,12 @@ ul {
 
 .image-circle {
     width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
     border-radius: 50%;
+}
+
+.image-equal-dimensions {
+    aspect-ratio: 1;
+    object-fit: contain;
 }
 
 .right-align {
@@ -214,12 +218,23 @@ blockquote cite {
 
 /* Meet the Team Section */
 #team {
-    background-color: #c4b09b;
-    opacity: 0.39;
+    background-color: #E2DBD2;
 }
 
 .team-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--flex-padding);
+}
+
+.team-container div {
+    max-width: calc(33% - var(--flex-padding));
+    text-align: center;
+}
+
+.team-container div img {
+    width: 80%;
 }
 
 #contact {
