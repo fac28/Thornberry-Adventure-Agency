@@ -158,6 +158,10 @@ h3 {
     background-blend-mode: multiply;
 }
 
+#opener div a {
+    display: inline-block;
+}
+
     /* Filler 1 Section */
 blockquote cite {
     display: block;
