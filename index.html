@@ -148,19 +148,19 @@
             <form id="form" action="https://learn-forms.netlify.com/submit/part3" method="GET">
                 <!-- <div class="form-field"> -->
                     <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" class="form-field" required>
+                    <input type="text" name="name" id="name" required>
                 <!-- </div> -->
                 <!-- <div class="form-field"> -->
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" class="form-field" required>
+                    <input type="email" name="email" id="email" required>
                 <!-- </div> -->
                 <!-- <div class="form-field"> -->
                     <label for="tel">Phone: </label>
-                    <input type="tel" name="tel" id="telephone" class="form-field" required>
+                    <input type="tel" name="tel" id="telephone" required>
                 <!-- </div> -->
                 <!-- <div class="form-field"> -->
                     <label for="query-type">Nature of your query:</label>
-                        <select id="query" name="query-type" class="form-field">
+                        <select id="query" name="query-type">
                             <option value="select" selected>Please select...</option>
                             <option value="adrenaline">Adrenaline Thrills</option>
                             <option value="tropical">Tropical Trek</option>
@@ -171,7 +171,7 @@
                 <!-- </div> -->
 
                 <!-- <div class="form-field"></div> -->
-                    <fieldset class="form-field">
+                    <fieldset>
                         <legend>Preferred contact method</legend>
                 
                         <input id="contact-email" type="radio" name="contact" value="email" checked/>
@@ -187,16 +187,16 @@
 
                 <!-- <div class="form-field"> -->
                     <label for="name">Message: </label>
-                    <textarea id="message" name="message" rows="5" cols="33" class="form-field"></textarea>
+                    <textarea id="message" name="message" rows="5" cols="33"></textarea>
                 <!-- </div> -->
                 
-                <!-- <div class="form-field"> -->
-                    <label for="marketingConsent">Email me to your hearts galore.</label>
-                    <input type="checkbox" name="marketingConsent" id="mail-checkbox" class="form-field"/>
-                <!-- </div> -->
+                    <div class="checkbox-wrapper">
+                        <label for="marketingConsent">Email me to your hearts galore.</label>
+                        <input type="checkbox" name="marketingConsent" id="mail-checkbox"/>
+                    </div>
 
                 <!-- <div class="form-field form-submit"> -->
-                    <input type="submit" value="Submit" class="form-field form-submit">
+                    <input type="submit" value="Submit" class="form-submit">
                 <!-- </div> -->
             </form>
         </section>

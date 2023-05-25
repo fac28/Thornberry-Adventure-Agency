@@ -247,35 +247,48 @@ blockquote cite {
     width: 80%;
 }
 
+/* Contact Section */
 #contact {
     background-color: #8ea39a;
 }
 
-/* Contact Section */
-
 form {
-    display: grid;
-justify-content: center;}
+    max-width: 70%;
+    margin: 0 auto;
+}
 
-form > * > *{
+fieldset {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: start;
+    row-gap: 0.5rem;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.checkbox-wrapper label {
+    flex-basis: auto;
+}
+
+form > * {
     width: 100%;
 }
 
 form input, form textarea, form select, form fieldset {
     background-color: #F2F2EF;
     padding: 1rem;
-    margin: 8px 0;
+    margin: 6px 0 15px;
     border: none;
     border-radius: 5px;
 }
 
 input[type=submit] {
     border: 1px solid black;
-    width: 60%;
-}
-
-.form-submit {
-    text-align: center;
+    width: 8rem;
+    margin: 15px auto 6px;
 }
 
 /* Media Queries */
