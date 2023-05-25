@@ -17,6 +17,10 @@ html {
     background-color: #f5f5f5; 
 }
 
+body {
+    max-width: 1440px;
+}
+
 .navbar {
     height: 4.5rem;
     display: flex;
@@ -46,13 +50,6 @@ ul {
     list-style: none;
     padding: 0;
 }
-  
-/* img {
-  margin: 0 auto; 
-  height: 100%;
-  width: auto;
-  
-} */
 
 /* -- Repeatable Styling -- */
 
@@ -168,7 +165,7 @@ blockquote cite {
     padding-top: 1rem;
   }
 
-/* Introduction Section */
+    /* Introduction Section */
 
 #introduction {
     background-color: #E6EFEB;
@@ -253,13 +250,12 @@ blockquote cite {
 }
 
 form {
-    max-width: 70%;
     margin: 0 auto;
 }
 
 fieldset {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 4fr;
     align-items: start;
     row-gap: 0.5rem;
 }
@@ -277,8 +273,11 @@ form > * {
     width: 100%;
 }
 
-form input, form textarea, form select, form fieldset {
+form input, form textarea, form select {
     background-color: #F2F2EF;
+}
+
+form input, form textarea, form select, form fieldset {
     padding: 1rem;
     margin: 6px 0 15px;
     border: none;
@@ -324,6 +323,10 @@ input[type=submit] {
 
     #leopard-text > * {
         flex-basis: 50%;
+    }
+
+    form {
+        max-width: 500px;
     }
   }
 
@@ -374,6 +377,10 @@ input[type=submit] {
     .item6 {
         grid-area: 3 / 3 / 3 / 4;
     }
+
+    /* form {
+        max-width: 80%;
+    } */
 }
 
 @media (min-width: 900px) {
@@ -392,4 +399,5 @@ input[type=submit] {
     h2 {
         font-size: 3rem;
     }
+
 }
