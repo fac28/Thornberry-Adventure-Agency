@@ -22,14 +22,23 @@
 </head>
 
 <body>
+    <div id="tinter" onclick="toggleMenu()"></div>
     <nav class="navbar" id="nav-mobile">
         <div id="menu-icon" onclick="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-        <a href="index.html"><img src="images/logo.svg" class="logo" /></a>
+        <p class="nav-title">Thornberry Adventures</p>
     </nav>
+    <nav class="navbar" id="nav-desktop">
+        <p class="nav-title" id="desktop-title">Thornberry Adventures</p>
+        <div class="nav-links-container">
+            <a href="#introduction" onclick="closeMenu()">About</a>
+            <a href="#team" onclick="closeMenu()">The Team</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+	</nav>
     <header>
         <!-- Opener -->
         <section id="opener" class="center-vertical">
