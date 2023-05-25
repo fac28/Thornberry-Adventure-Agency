@@ -261,7 +261,7 @@ form > * > *{
     width: 100%;
 }
 
-form input, form textarea {
+form input, form textarea, form select, form fieldset {
     background-color: #F2F2EF;
     padding: 1rem;
     margin: 8px 0;
