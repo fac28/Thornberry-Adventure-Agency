@@ -155,19 +155,17 @@
         <section id="contact" class="padding-btwn-text-small">
             <h2>Contact us to start your adventure</h2>
             <form id="form" action="https://learn-forms.netlify.com/submit/part3" method="GET">
-                <!-- <div class="form-field"> -->
-                    <label for="name">Name: </label>
+
+                    <label for="name">Name:</label>
                     <input type="text" name="name" id="name" required>
-                <!-- </div> -->
-                <!-- <div class="form-field"> -->
-                    <label for="email">Email: </label>
+
+
+                    <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required>
-                <!-- </div> -->
-                <!-- <div class="form-field"> -->
-                    <label for="tel">Phone: </label>
+
+                    <label for="tel">Phone:</label>
                     <input type="tel" name="tel" id="telephone" required>
-                <!-- </div> -->
-                <!-- <div class="form-field"> -->
+                
                     <label for="query-type">Nature of your query:</label>
                         <select id="query" name="query-type">
                             <option value="select" selected>Please select...</option>
@@ -177,11 +175,9 @@
                             <option value="safari">Safari Expedition</option>
                             <option value="other">Other</option>
                         </select>
-                <!-- </div> -->
-
-                <!-- <div class="form-field"></div> -->
+               
                     <fieldset>
-                        <legend>Preferred contact method</legend>
+                        <legend>Preferred contact method:</legend>
                 
                         <input id="contact-email" type="radio" name="contact" value="email" checked/>
                         <label for="contact-email" class="radio">Email</label>
@@ -192,22 +188,16 @@
                         <input id="contact-smoke" type="radio" name="contact" value="smoke" />
                         <label for="contact-smoke" class="radio">Smoke Signals</label>
                     </fieldset>
-                <!-- </div> -->
 
-                <!-- <div class="form-field"> -->
-                    <label for="name">Message: </label>
+                    <label for="name">Message:</label>
                     <textarea id="message" name="message" rows="5" cols="33"></textarea>
-                <!-- </div> -->
                 
                     <div class="checkbox-wrapper">
-                        <label for="marketingConsent">Email me to your hearts galore.</label>
+                        <label for="marketingConsent">Are you happy for us to stay in touch?</label>
                         <input type="checkbox" name="marketingConsent" id="mail-checkbox"/>
                     </div>
 
-                <!-- <div class="form-field form-submit"> -->
                     <button type="submit" value="Submit" class="form-submit">Submit</button>
-                    <!-- <input type="submit" value="Submit" class="form-submit"> -->
-                <!-- </div> -->
             </form>
         </section>
     </footer>

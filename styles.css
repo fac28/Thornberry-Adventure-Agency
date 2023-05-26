@@ -443,7 +443,6 @@ form input, form textarea, form select, form fieldset {
 
 button[type=submit] {
     border: 1px solid black;
-    width: 8rem;
     margin: 15px auto 6px;
 }
 
