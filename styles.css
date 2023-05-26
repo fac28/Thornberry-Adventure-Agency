@@ -144,6 +144,10 @@ h3 {
     color: var(--color-forest-green);
 }
 
+.italic {
+    font-style: italic;
+}
+
 /* -- Styling for Multiple Sections -- */
 
 #filler1 {
@@ -374,17 +378,24 @@ h3 {
     .team-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: var(--flex-padding);
     }
 
     .team-container div {
         max-width: calc(100% - var(--flex-padding));
         text-align: center;
+        background-color: var(--color-cream);
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
     }
 
+    .team-container div > *:first-child {
+        padding-bottom: 1rem;
+    }
     .team-container div img {
         width: 80%;
+        max-width: 230px;
     }
 
 /* Contact Section */
