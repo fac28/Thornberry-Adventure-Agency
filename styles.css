@@ -427,18 +427,21 @@ form > * {
     width: 100%;
 }
 
-form input, form textarea, form select {
+form input, form textarea, form select, form button {
     background-color: #F2F2EF;
 }
 
-form input, form textarea, form select, form fieldset {
+form input, form textarea, form select, form fieldset, form button {
     padding: var(--x-small-padding);
-    margin: 6px 0 15px;
-    border: none;
     border-radius: 5px;
 }
 
-input[type=submit] {
+form input, form textarea, form select, form fieldset {
+    margin: 6px 0 15px;
+    border: none;
+}
+
+button[type=submit] {
     border: 1px solid black;
     width: 8rem;
     margin: 15px auto 6px;
