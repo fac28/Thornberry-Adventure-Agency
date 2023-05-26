@@ -575,6 +575,10 @@ button[type=submit] {
         max-width: calc(33% - var(--flex-padding));
     }
 
+    #filler2 > * {
+        width: 100%;
+        text-align: right;
+    }
     #filler2 {
         display: flex;
         flex-wrap: wrap;
@@ -602,5 +606,17 @@ button[type=submit] {
     h2 {
         font-size: 3rem;
     }
+
+    #introduction p {
+        font-size: 1.25rem;
+        }
+
+}
+
+@media (min-width: 1450px) {
+
+    #introduction p {
+        font-size: 1.5rem;
+        }
 
 }
