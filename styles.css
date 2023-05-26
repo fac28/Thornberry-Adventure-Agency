@@ -8,6 +8,7 @@
     --margin-top: 4rem;
     --small-min-height: 50vh;
     --x-small-padding: 1rem;
+    --button-padding-y: 0.8rem;
   
     /* -- Colors -- */
     --color-background: #f5f5f5;
@@ -63,7 +64,7 @@ ul {
 /* -- Repeatable Styling -- */
 
 .button {
-    padding: 0.8rem 2rem;
+    padding: var(--button-padding-y) 2rem;
     background-color: var(--color-cream);
     border-radius: 8px;
 }
@@ -136,6 +137,7 @@ h2 {
 h3 {
     display: none;
 }
+
 #introduction h2 {
     color: var(--color-dark-slate);
 }
@@ -144,14 +146,17 @@ h3 {
     color: var(--color-forest-green);
 }
 
+#leopard-text p {
+    font-size: 2.5rem;
+}
+
 .italic {
     font-style: italic;
 }
 
 /* -- Styling for Multiple Sections -- */
 
-#filler1 {
-    background-color: var(--color-pale-green);
+#filler1, #filler2 {
     min-height: var(--small-min-height);
 }
 
@@ -304,6 +309,9 @@ h3 {
     }
 
     /* Filler 1 Section */
+    #filler1 {
+    background-color: var(--color-pale-green);
+    }
 
     blockquote cite {
         display: block;
@@ -362,12 +370,12 @@ h3 {
         background: url(images/leopard-tree.jpeg) no-repeat center center;
         background-size: cover;
         align-content: space-between;
-        padding: 4rem var(--med_padding);
+        padding: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center; 
-        min-height: var(--small-min-height);
+        gap: calc((2 * var(--button-padding-y)) + 1rem);
     }
 
     /* Meet the Team Section */
