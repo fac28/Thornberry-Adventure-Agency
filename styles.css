@@ -36,8 +36,9 @@ html {
     background-color: var(--color-background); 
 }
 
-body {
-    max-width: 1440px;
+section > * {
+    max-width: 1200px; /* makes site suitable for large screens */
+    margin: 0 auto;
 }
 
 section {
