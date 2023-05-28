@@ -34,11 +34,32 @@
     <nav class="navbar" id="nav-desktop">
         <p class="nav-title" id="desktop-title">Thornberry Adventures</p>
         <div class="nav-links-container">
-            <a href="#introduction" onclick="closeMenu()">About</a>
-            <a href="#team" onclick="closeMenu()">The Team</a>
-            <a href="#contact" onclick="closeMenu()">Contact</a>
+            <a href="#introduction" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="nav-icon">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>About</a>
+            <a href="#team" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="nav-icon">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>The Team</a>
+            <a href="#contact" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" strfoke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="nav-icon">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>Contact</a>
         </div>
-	</nav>
+    </nav>
     <header>
         <!-- Opener -->
         <section id="opener" class="center-vertical">
@@ -74,10 +95,12 @@
                     </p>
                 </div>
                 <div class="item item2 center-grid-x-axis">
-                    <img src="images/elephants.jpeg" alt="elephants playing in the wild savanna" class="image-circle landscape-image-equal-dimensions"/>
+                    <img src="images/elephants.jpeg" alt="elephants playing in the wild savanna"
+                        class="image-circle landscape-image-equal-dimensions" />
                 </div>
                 <div class="item item3 center-grid-x-axis">
-                    <img src="images/forest.jpg" alt="a tropical mountain forest covered in mist" class="image-circle landscape-image-equal-dimensions"/>
+                    <img src="images/forest.jpg" alt="a tropical mountain forest covered in mist"
+                        class="image-circle landscape-image-equal-dimensions" />
                 </div>
                 <div class="item item4">
                     <p>
@@ -97,11 +120,12 @@
                     </p>
                 </div>
                 <div class="item item6 center-grid-x-axis">
-                    <img src="images/giraffe.jpg" alt="a giraffe sticking its tongue out" class="image-circle landscape-image-equal-dimensions"/>
+                    <img src="images/giraffe.jpg" alt="a giraffe sticking its tongue out"
+                        class="image-circle landscape-image-equal-dimensions" />
                 </div>
             </div>
         </section>
-      
+
         <!-- Filler 2 (leopard) -->
         <section id="filler2">
             <div id="leopard-text">
@@ -113,93 +137,97 @@
                 <a href="#contact" class="button">Contact</a>
             </div>
         </section>
+
         <!-- Meet the team -->
         <section id="team" class="padding-btwn-text-small">
             <h2 class="center-text">Meet the Thornberry Team</h2>
             <div class="team-container">
                 <div>
-                    <img src="images/team/nigel.webp" alt="Nigel Thornberry" class="portrait-image-equal-dimensions"/>
+                    <img src="images/team/nigel.webp" alt="Nigel Thornberry" class="portrait-image-equal-dimensions" />
                     <p>Sir Nigel Thornberry</p>
                     <p class="italic">Chief Explorer</p>
                 </div>
                 <div>
-                    <img src="images/team/marianne.webp" alt="Marianne Thornberry" class="portrait-image-equal-dimensions"/>
+                    <img src="images/team/marianne.webp" alt="Marianne Thornberry"
+                        class="portrait-image-equal-dimensions" />
                     <p>Marianne Thornberry</p>
                     <p class="italic">Expedition Videographer</p>
                 </div>
                 <div>
-                    <img src="images/team/eliza.webp" alt="Eliza Thornberry" class="portrait-image-equal-dimensions"/>
+                    <img src="images/team/eliza.webp" alt="Eliza Thornberry" class="portrait-image-equal-dimensions" />
                     <p>Eliza Thornberry</p>
                     <p class="italic">Animal Whisperer</p>
                 </div>
                 <div>
-                    <img src="images/team/donnie.webp" alt="Donnie Thornberry" class="portrait-image-equal-dimensions"/>
+                    <img src="images/team/donnie.webp" alt="Donnie Thornberry"
+                        class="portrait-image-equal-dimensions" />
                     <p>Donnie Thornberry</p>
                     <p class="italic">Adrenaline Master</p>
                 </div>
                 <div>
-                    <img src="images/team/debbie.webp" alt="Debbie Thornberry" class="portrait-image-equal-dimensions"/>
+                    <img src="images/team/debbie.webp" alt="Debbie Thornberry"
+                        class="portrait-image-equal-dimensions" />
                     <p>Debbie Thornberry</p>
                     <p class="italic">Head of Morale</p>
                 </div>
                 <div>
-                    <img src="images/team/darwin.webp" alt="Darwin" class="portrait-image-equal-dimensions"/>
+                    <img src="images/team/darwin.webp" alt="Darwin" class="portrait-image-equal-dimensions" />
                     <p>Darwin</p>
                     <p class="italic">Head of Operations</p>
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
+
         <!-- Contact form -->
         <section id="contact" class="padding-btwn-text-small">
             <h2>Contact us to start your adventure</h2>
             <form id="form" action="https://learn-forms.netlify.com/submit/part3" method="GET">
 
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" required>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
 
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
+                <label for="tel">Phone:</label>
+                <input type="tel" name="tel" id="telephone" required>
 
-                    <label for="tel">Phone:</label>
-                    <input type="tel" name="tel" id="telephone" required>
-                
-                    <label for="query-type">Nature of your query:</label>
-                        <select id="query" name="query-type">
-                            <option value="select" selected>Please select...</option>
-                            <option value="adrenaline">Adrenaline Thrills</option>
-                            <option value="tropical">Tropical Trek</option>
-                            <option value="mountain">Mountain Hiking</option>
-                            <option value="safari">Safari Expedition</option>
-                            <option value="other">Other</option>
-                        </select>
-               
-                    <fieldset>
-                        <legend>Preferred contact method:</legend>
-                
-                        <input id="contact-email" type="radio" name="contact" value="email" checked/>
-                        <label for="contact-email" class="radio">Email</label>
-                
-                        <input id="contact-tel" type="radio" name="contact" value="telephone" />
-                        <label for="contact-tel" class="radio">Telephone</label>
-                
-                        <input id="contact-smoke" type="radio" name="contact" value="smoke" />
-                        <label for="contact-smoke" class="radio">Smoke Signals</label>
-                    </fieldset>
+                <label for="query-type">Nature of your query:</label>
+                <select id="query" name="query-type">
+                    <option value="select" selected>Please select...</option>
+                    <option value="adrenaline">Adrenaline Thrills</option>
+                    <option value="tropical">Tropical Trek</option>
+                    <option value="mountain">Mountain Hiking</option>
+                    <option value="safari">Safari Expedition</option>
+                    <option value="other">Other</option>
+                </select>
 
-                    <label for="name">Message:</label>
-                    <textarea id="message" name="message" rows="5" cols="33"></textarea>
-                
-                    <div class="checkbox-wrapper">
-                        <label for="marketingConsent">Are you happy for us to stay in touch?</label>
-                        <input type="checkbox" name="marketingConsent" id="mail-checkbox"/>
-                    </div>
+                <fieldset>
+                    <legend>Preferred contact method:</legend>
 
-                    <button type="submit" value="Submit" class="form-submit">Submit</button>
+                    <input id="contact-email" type="radio" name="contact" value="email" checked />
+                    <label for="contact-email" class="radio">Email</label>
+
+                    <input id="contact-tel" type="radio" name="contact" value="telephone" />
+                    <label for="contact-tel" class="radio">Telephone</label>
+
+                    <input id="contact-smoke" type="radio" name="contact" value="smoke" />
+                    <label for="contact-smoke" class="radio">Smoke Signals</label>
+                </fieldset>
+
+                <label for="name">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="33"></textarea>
+
+                <div class="checkbox-wrapper">
+                    <label for="marketingConsent">Are you happy for us to stay in touch?</label>
+                    <input type="checkbox" name="marketingConsent" id="mail-checkbox" />
+                </div>
+
+                <button type="submit" value="Submit" class="form-submit">Submit</button>
             </form>
         </section>
+    </main>
+    <footer>
     </footer>
     <script src="scripts.js"></script>
 </body>
