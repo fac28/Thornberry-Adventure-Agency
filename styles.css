@@ -254,6 +254,12 @@ h3 {
         display: none;
     }
 
+    .nav-icon {
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+        stroke: black;
+    }
+
     #nav-desktop a {
         text-align: left;
         width: 100%;
@@ -274,7 +280,7 @@ h3 {
     }
     
     .navbar a:hover svg {
-        stroke: black;
+        stroke: white;
     }
     
     .navbar a:active {
@@ -283,7 +289,7 @@ h3 {
     }
     
     .navbar a:active svg {
-        stroke: white;
+        stroke: black;
     }
     
     #tinter {
