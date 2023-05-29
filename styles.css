@@ -71,6 +71,15 @@ ul {
     border-radius: 8px;
 }
 
+.button:hover {
+    background-color: var(--color-pale-green);
+}
+
+.button:active {
+    background-color: var(--color-forest-green);
+    color: white;
+}
+
 .center-text {
     text-align: center;
 }
@@ -448,6 +457,7 @@ form > * {
 
 form input, form textarea, form select, form button {
     background-color: #F2F2EF;
+    outline-color: var(--color-forest-green);
 }
 
 form input, form textarea, form select, form fieldset, form button {
@@ -463,6 +473,15 @@ form input, form textarea, form select, form fieldset {
 button[type=submit] {
     border: 1px solid black;
     margin: 15px auto 6px;
+}
+
+button[type=submit]:hover {
+    background-color: var(--color-pale-green);
+}
+
+button[type=submit]:active {
+    background-color: var(--color-forest-green);
+    color: white;
 }
 
 /* Media Queries */
