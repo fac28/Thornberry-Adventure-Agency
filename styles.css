@@ -484,6 +484,17 @@ button[type=submit]:active {
     color: white;
 }
 
+/* footer styling */
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px 50px 50px;
+    font-size: small;
+    background-color: var(--color-leopard-tree);
+}
+
 /* Media Queries */
 
 @media (min-width: 600px) {
