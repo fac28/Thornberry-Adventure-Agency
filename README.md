@@ -115,6 +115,39 @@ section > * {
 }
 ```
 
+### Issue - Navbar resizing issue. 
+Fixed with javascript media queries triggering functions.
+
+**Solution**
+
+```js
+// make sure screen resizes don't break sidebar functionality
+const mediaQuery = '(max-width: 768px)';
+const mediaQueryList = window.matchMedia(mediaQuery);
+mediaQueryList.addEventListener('change', event => {
+    // mobile display mode
+    if (event.matches) {
+        // hide nav menu if shown
+        if (sideBar) {
+            menu.style.display = "flex";
+        } else {
+            menu.style.transitionDuration = "0.3s";
+            menu.style.display = "none";
+            tinter.style.display = "none";
+        }
+    // desktop display mode
+    } else {
+        const icon = document.getElementById("menu-icon");
+        if (icon.classList.contains("change"))
+            icon.classList.toggle("change");
+        menu.style.transitionDuration = "0s";
+        menu.style.display = "flex";
+        tinter.style.display = "none";
+        sideBar = false;
+    }
+})
+```
+
 ## Installation
 Access the website on your browswer using the URL: https://fac28.github.io/Thornberry-Adventure-Agency/.
 
