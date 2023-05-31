@@ -180,15 +180,15 @@
             <form id="form" action="https://learn-forms.netlify.com/submit/part3" method="GET">
 
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" autocomplete="name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" autocomplete="email" required>
 
                 <label for="telephone">Phone:</label>
-                <input type="tel" name="tel" id="telephone" required>
+                <input type="tel" name="tel" id="telephone" autocomplete="tel" required>
 
-                <label for="query-type">Nature of your query:</label>
+                <label for="query">Nature of your query:</label>
                 <select id="query" name="query-type">
                     <option value="select" selected>Please select...</option>
                     <option value="adrenaline">Adrenaline Thrills</option>
