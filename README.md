@@ -50,36 +50,73 @@ We started by mocking up the design of our website on Figma, to give us a starti
 ![Original Website design](images/mockup/CONTACT.png)
 
 After we had our brief we divided the workload:
-
-1. Creating the HTML, 
-creating the CSS, creating the Nav  
-
-1. 
-2. 
-
+  
+1. Set up HTML boilerplate code.
+2. Replicate basic CSS styling from mockup design.
+3. Add media queries - take mobile-first approach.
+4. Create HTML Contact Form
+5. Add submitability to Contact Form
+6. Create responsive navigation bar. 
+7. Convert repeated colours to CSS variables.
+8. Add SVG icons to navbar links.
+9. Optimise image file sizes.
+10. Add button hover/active styling
+11. Check site UI has sufficient colour contrast
+12. Run site through a screen reader
 
 ## Debugging
 
-### Issue: 
+### Issue - Inline element not styling: 
+In the opening section, padding was added to the two headings and the contact link. However, the contact link would not be affected by it. After speaking to others, we realised that the contact link was an inline element, and would need to be changed to inline-block, or block for the padding to affect it.
 
 **Solution:**  
+
 ```html
+<div class="padding-btwn-text-small center-text">
+  <h3>Embark on an extraordinary expedition with Thornberry Adventures.</h3>
+  <h1>Dare to walk on the wild side?</h1>
+  <a href="#contact" class="button">Contact</a>
+</div>
+```
+```css
+#opener div a {
+  display: inline-block;
+  }
 
+.padding-btwn-text-small > *:not(:first-child) {
+    margin-top: 4rem;
+  }
 ```
 
-### Issue: 
-
-**Solution**
-```css
+### Issue - Form label mix-up: 
+We ran a Lightbox Report and realised that our labels were mixed up and were impacting our accessibility score. We had accidentally named the label after the input name rather than the id.
+```html
+<label for="marketingConsent">Are you happy for us to stay in touch?</label>
+<input type="checkbox" name="marketingConsent" id="mail-checkbox" />
 ```
 
-### Issue: 
 **Solution**
+```html
+<label for="mail-checkbox">Are you happy for us to stay in touch?</label>
+<input type="checkbox" name="marketingConsent" id="mail-checkbox" />
+```
+
+### Issue - Site indefinitely expanding to fill large screens: 
+The site was displaying as expected on laptops, mobiles, and tablets. However, on large desktop screens the meet the team flex section would expacting to 5 cards in the first row - we didn't want this. We realised we needed to add a container to the site to stop all content from expanding to fill large screens.
+
+**Solution**
+
+Note: _margin: 0 auto;_ centers the contained content.
+
 ```css
+section > * {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
 ```
 
 ## Installation
-Access the website using the URL https://fac28.github.io/Thornberry-Adventure-Agency/ on your browser.
+Access the website on your browswer using the URL: https://fac28.github.io/Thornberry-Adventure-Agency/.
 
 ## Usage
 The website is designed to provide information about the Thornberry Adventure Agency. Users can navigate through the different sections using the navigation bar at the top or through keyboard controls. Each section provides specific information or features, such as an introduction to the agency, team details, and a contact form.
@@ -95,7 +132,6 @@ The Thornberry Adventure Agency website does not specify a license in the provid
 
 ## Contact
 For any inquiries, questions, or support related to the Thornberry Adventure Agency or its website, you can reach out to the creators on GitHub:
-
-https://github.com/isobelbutler   
-https://github.com/hexmusictheory
+- [Issy](https://www.github.com/isobelbutler)
+- [Dylan](https://www.github.com/hexmusictheory)
 
